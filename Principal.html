@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banca móvil</title>
+    <link rel="stylesheet" href="styles/stylesPrincipal.css">
+
+</head>
+<body>
+    <nav class="barra-nav">
+        <div class="container flex">
+            <img src="img/BANKPNG.png"/>
+            <ul> 
+                <li><a href="#">Pagos</a></li>
+                <li><a href="#">Estados de cuenta</a></li>
+                <li><a href="#">Búsqueda de movimientos</a></li>
+                <li><a href="#">Configuración</a></li>        
+                <li><a href="#">Ayuda</a></li>
+                    
+            </ul>
+        </div>
+
+    </nav>
+    <div class="encabezado">
+        <h1>Bienvenido a tu cuenta</h1>
+        <div>
+        <label for="">Cuenta de débito</label>
+        <input type="text" name="cantidadDebito" id="cantidadDebito" value="1500">
+        </div>
+        <div>
+        <label for="">Cuenta de crédito</label>
+        <input type="text" name="cantidadCredito" id="cantidadCredito" value="10000">
+        </div>
+        <form action="">
+            <h2>Transferencias</h2>
+            <input type="text" name="transferencias" id="transf" placeholder="Cantidad">
+            <hr>
+        </form>    
+    </div>
+    <div class="movimientos">
+        <form action="">
+            <div class="debito"></div>
+                <h2>Movimientos disponibles en su cuenta de débito</h2>
+                <input type="button" class="btnstyle" name="" value="Transferencia de cuenta de débito a crédito" id="bt2" onclick="formula()">
+                <input type="button" class="btnstyle" name="" value="Depositar a cuenta de débito" id="bt4" onclick="formula3()">
+                <input type="button" class="btnstyle" name="" value="Retirar de cuenta de débito" id="bt6" onclick="formula5()">
+            </div>
+            <div class="credito">
+                <h2>Movimientos disponibles en su cuenta de crédito</h2>
+                <input type="button" class="btnstyle" name="" value="Transferencia de cuenta de crédito a débito" id="bt3" onclick="formula2()">
+                <input type="button" class="btnstyle" name="" value="Depositar a cuenta de crédito" id="bt5" onclick="formula4()">
+                <input type="button" class="btnstyle" name="" value="Retirar de cuenta de crédito" id="bt7" onclick="formula6()">
+            </div>
+        </form>
+    </div>
+    <script src="/script/scriptPrincipal.js">
+        
+    </script>
+
+</body>
+</html>
